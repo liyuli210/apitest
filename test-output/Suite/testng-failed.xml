@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.yxt.listener.ExtentIReporterListenerUtil"/>
+  </listeners>
+  <test thread-count="1" name="YXT(failed)" parallel="tests">
+    <classes>
+      <class name="com.yxt.testcases.AddDataPermissionTests">
+        <methods>
+          <include name="test001_addDataPermission" invocation-numbers="1"/>
+          <include name="init"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.yxt.testcases.AddDataPermissionTests -->
+    </classes>
+  </test> <!-- YXT(failed) -->
+</suite> <!-- Failed suite [Suite] -->

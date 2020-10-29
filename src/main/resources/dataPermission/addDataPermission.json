@@ -1,0 +1,9 @@
+{
+ "name": "testname",
+ "catalogName": "组织维度",
+ "componentCode": "data_auth_component_select_user",
+ "componentName": "选人",
+ "code": "code123",
+ "orderIndex": 1,
+ "remark": "李玉立测试"
+}
