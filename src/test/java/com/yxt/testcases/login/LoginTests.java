@@ -31,5 +31,5 @@ public class LoginTests extends TestBase {
 		String username=JSONPath.extract(login, "$.userInfo.username").toString();
 		Assert.assertEquals(username, "admin");
 	}
-	
+	//继续
 }
