@@ -10,6 +10,7 @@ import com.sun.org.apache.xml.internal.security.utils.Base64;
 /**
  * @author liyuli 2020年8月31日下午5:38:57 登录前用户和密码加密
  */
+
 public class LoginEncryption {
 	public static synchronized byte[] encrypt(byte[] plainText, int offset, int len, SecretKey skey, byte[] iv)throws Exception {
 		try {
