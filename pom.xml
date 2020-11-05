@@ -114,6 +114,10 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<compilerArguments>
+					    <verbose/><!-- 这个选项用来传递编译器自身不包含但是却支持的参数选项 -->
+					    <bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/jce.jar</bootclasspath><!-- windows编译时使用分号;,linux编译时使用冒号: -->
+					</compilerArguments>
 				</configuration>
 			</plugin>
 			
