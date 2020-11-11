@@ -1,10 +1,7 @@
 package com.yxt.utils;
-/** 
-
-* @author 作者 沙陌 
-
-* @version 创建时间：2020年8月2日 下午1:43:23 
-
+/**
+* @author liyuli
+* 2020年9月7日下午2:46:27
 */
 
 import java.io.File;

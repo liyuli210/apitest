@@ -13,13 +13,11 @@ import org.apache.log4j.Logger;
 import java.util.Properties;
 import java.util.Set;
 
-/** 
-
-* @author 作者 沙陌 
-
-* @version 创建时间：2020年7月26日 上午10:41:03 
-
+/**
+* @author liyuli
+* 2020年9月7日下午2:46:27
 */
+
 public class PropertyUtil {
 	private static Logger logger=Logger.getLogger(PropertyUtil.class);
 	
