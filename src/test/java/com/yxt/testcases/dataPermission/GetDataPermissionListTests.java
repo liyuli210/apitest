@@ -23,11 +23,11 @@ import com.yxt.utils.DBUtil;
 import com.yxt.utils.PropertyUtil;
 
 public class GetDataPermissionListTests extends TestBase {
-	@Test(description = "查看列表")
+//	@Test(description = "查看列表")
 	public void test001_getDataPermissionList() throws Exception {
 		Map<String, String>params=new HashMap<String, String>();
 		String dataPermissionList = GetDataPermissionListServer.searchDataPermissionList(url,token,params);
-//		System.out.println(dataPermissionList);
+		System.out.println("这里"+dataPermissionList);
 		//数据库校验
 		List<Map> data = DBUtil.getData("select name,code from core_data_permission_info order by order_index,create_time DESC LIMIT 10");
 		JSONArray namesArray=(JSONArray)JSONPath.extract(dataPermissionList, "$datas.name");
@@ -43,7 +43,6 @@ public class GetDataPermissionListTests extends TestBase {
 		Map<String, String>params=new HashMap<String, String>();
 		params.put("keyword", "选择试卷批阅人");
 		String dataPermissionList = GetDataPermissionListServer.searchDataPermissionList(url, token, params);
-//		System.out.println(dataPermissionList);
 		//数据库校验
 		List<Map> data = DBUtil.getData("select name,code from core_data_permission_info where name like '%选择试卷批阅人%' or catalog_name like '%选择试卷批阅人%' order by order_index,create_time DESC LIMIT 10");
 		JSONArray namesArray=(JSONArray)JSONPath.extract(dataPermissionList, "$datas.name");
