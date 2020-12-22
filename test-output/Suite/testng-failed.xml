@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="1" name="YXT(failed)" parallel="tests">
     <classes>
-      <class name="com.yxt.testcases.AddDataPermissionTests">
+      <class name="com.yxt.testcases.dataPermission.GetDataPermissionListTests">
         <methods>
-          <include name="test001_addDataPermission" invocation-numbers="1"/>
           <include name="init"/>
+          <include name="test001_getDataPermissionList"/>
           <include name="close"/>
         </methods>
-      </class> <!-- com.yxt.testcases.AddDataPermissionTests -->
+      </class> <!-- com.yxt.testcases.dataPermission.GetDataPermissionListTests -->
     </classes>
   </test> <!-- YXT(failed) -->
 </suite> <!-- Failed suite [Suite] -->
